@@ -10,7 +10,10 @@ Retrieval-Interleaved Generation (RIG)—also referred to as Interleaved Retriev
 The technical integration of dynamic database queries within generation pipelines has transitioned from fixed-interval sweeps to agentic tool triggers and native, token-level interleaved retrievals.
 
 ```mermaid
-[Standard Static RAG (2020/2023)] ----> [Active / Interleaved Loops (FLARE, 2023)] ----> [Native Unified Protocol RIG (2025+)](Linear Retrieve-then-Read Loop)         (Logit Confidence Threshold Triggers)            (Unified Token-Level Search Enclaves)
+flowchart LR
+    A["Standard Static RAG (2020/2023)<br/>(Linear Retrieve-then-Read Loop)"]
+    --> B["Active / Interleaved Loops (FLARE, 2023)<br/>(Logit Confidence Threshold Triggers)"]
+    --> C["Native Unified Protocol RIG (2025+)<br/>(Unified Token-Level Search Enclaves)"]
 ```
 
 *   **The Static Pipeline Baseline (Standard RAG, ~2020–2023)**
